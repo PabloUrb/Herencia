@@ -12,7 +12,7 @@ package tipos;
 public class Zerg extends Unidad{
     private int esbirros;
     private int overlords;
-    ﬁ
+    
     public Zerg(String nombre, int victorias, double ataque, double defensa, int esbirros, int overlords){
         super(nombre, victorias, ataque, defensa);
         this.esbirros = esbirros;
