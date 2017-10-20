@@ -35,4 +35,14 @@ public class Terran extends Unidad{
         this.tecnologias = tecnologias;
     }
     
+    public double defTerran(double defensa){
+        double defEdificios = getDefensa() * (0.25 * this.edificios);
+        return defensa;
+    }
+    
+    public double AtcTerran(double ataque){
+        double atcNuevaArma = getAtaque() * (0.5 * this.tecnologias);
+        return ataque;
+    }
+    
 }

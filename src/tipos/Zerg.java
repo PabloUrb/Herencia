@@ -12,6 +12,7 @@ package tipos;
 public class Zerg extends Unidad{
     private int esbirros;
     private int overlords;
+    ﬁ
     public Zerg(String nombre, int victorias, double ataque, double defensa, int esbirros, int overlords){
         super(nombre, victorias, ataque, defensa);
         this.esbirros = esbirros;
@@ -35,7 +36,12 @@ public class Zerg extends Unidad{
     }
     
     public double AtcZerg (double ataque){
-     double atcEsbirros = getAtaque() * (0,15 * this.esbirros);
+     double atcEsbirros = getAtaque() * (0.15 * this.esbirros);
+     double atcOverLord = getAtaque() * (0.4 * this.overlords);
         return ataque;   
+    }
+    public double DefZerg(double defensa){
+        double defEsbirros = getDefensa() * (0.3 * this.esbirros);
+        return defensa;
     }
 }

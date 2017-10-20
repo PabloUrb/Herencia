@@ -25,5 +25,15 @@ public class Protoss extends Unidad {
     public void setPilones(int pilones) {
         this.pilones = pilones;
     }
+    
+    double AtcProtoss (double atque){
+        double AtcPilon = getAtaque() * (0.5 * this.ataque);
+     return atque;   
+    }
+    double DefProtoss (double defensa){
+       double DefPilon = getDefensa() * (0.5 * this.defensa);
+        return defensa;
+    }
+
 
 }
