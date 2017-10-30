@@ -13,7 +13,7 @@ package tipos;
 public class Terran extends Unidad{
     private int edificios;
     private int tecnologias;
-    public Terran(String nombre, int edificios, int tecnologias, int victorias, double ataque, double defensa){
+    public Terran(String nombre, int victorias ,double ataque, double defensa, int edificios, int tecnologias){
         super(nombre, victorias, ataque, defensa);
         this.edificios = edificios;
         this.tecnologias = tecnologias;

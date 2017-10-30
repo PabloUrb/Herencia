@@ -54,6 +54,11 @@ public abstract class Unidad {
         this.defensa = defensa;
     }
 
+    @Override
+    public String toString() {
+        return "Unidad{" + "nombre=" + nombre + ", victorias=" + victorias + ", ataque=" + ataque + ", defensa=" + defensa + '}';
+    }
+
     
     
     
